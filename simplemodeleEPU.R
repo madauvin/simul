@@ -61,7 +61,8 @@ df_quarterly <- df_quarterly |>
          dEPU = EPU - dplyr::lag(EPU,1))
 
 
-plot(df_travail$dEPU, type="l")
+plot(df_quarterly$dEPU, type="l")
+
 df_travail <- df_quarterly |> 
 na.omit()
 
